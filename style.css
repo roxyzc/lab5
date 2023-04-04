@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    width: 100vw;
+    margin: 50px 0;
+    padding: 30px;
+}
+
+.error, .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: start;
+    background-color: #0B2447;
+}
+
+.container nav a{
+    display: inline-block;
+    color: #fff;
+    padding: 18px;
+}
+
+.container nav a:hover{
+    background-color: #19376D;
+    transition: .2s all;
+}
+
+.container footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 18px;
+    background-color: #0B2447;
+    color: #fff;
+}
+
+.container .main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.container .main h2{
+    text-align: center;
+    font-weight: 500;
+}
+
+.container .tambah{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    background-color: #19376D;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.container .tambah:hover{
+    background-color: #1f4385;
+    transition: .2s all;
+}
+
+.container .main table tr td a.btnUpdate, table tr td a.btnDelete{
+    display: block;
+    color:#1f4385;
+}
+
+.container .main table tr td a.btnUpdate:hover, table tr td a.btnDelete:hover{
+    color:#0e2f5d;
+}
+
+.container table{
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container table tr th{
+    color: #fff;
+    background-color: #19376D;
+}
+
+.container table th, td{
+    padding: 10px 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container table tr td:nth-child(5) a, .container table tr td:nth-child(6) a{
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container table tr td:nth-child(1), .container table tr th:nth-child(1){
+    width: 8%;
+}
+
+.container table tr td:nth-child(5), .container table tr td:nth-child(6), .container table tr th:nth-child(5), .container table tr th:nth-child(6){
+    width: 10%;
+} 
+
+.container .card{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.228);
+}
+
+.container .card .input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .card .input input[type="text"]{
+    padding: 6px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container .card .input label{
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.container .card button{
+    margin-top: 12px;
+    padding: 6px 20px;
+    border: 1px solid black;
+    background-color: #19376D;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container .card button:hover{
+    background-color: #0e2f5d;
+    cursor: pointer;
+}
+
+.container .contact{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .contact a{
+    color: #2c2f42;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px black;
+    border-radius: 20%;
+}
+
