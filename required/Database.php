@@ -57,6 +57,7 @@ class Database
     {
         if (is_array($data)) {
             foreach ($data as $key => $val) {
+                echo $key;
                 $column[] = $key;
                 $value[] = "'{$val}'";
             }
